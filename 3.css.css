@@ -1,0 +1,175 @@
+.base {
+    max-width: 2000px;
+    height: auto;
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+.title {
+    height: 100px;
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+    letter-spacing: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: antiquewhite;
+}
+
+.menu > ul > li {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    display: block;
+}
+
+.menu .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color:antiquewhite;
+}
+
+.menu li:hover > .submenu {
+    display: block;
+}
+
+.submenu li {
+    position: relative;
+}
+
+.submenu .submenu {
+    top: 0;
+    left: 100%;
+}
+
+.menu > ul > li:hover > a {
+    opacity: 0.7;
+}
+.menu .submenu li:hover > a {
+    opacity: 0.7;
+}
+
+.left .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.left .menu > li {
+    list-style: none;
+}
+
+.left .menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    display: block;
+    font-size: 20px;
+}
+
+.left .menu .submenu {
+    display: none;
+    position: relative;
+    top: 100%;
+    left: 0;
+    background: antiquewhite;
+    border-radius: 4px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    min-width: 180px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.left .menu li:hover > .submenu {
+    display: block;
+}
+
+.left .menu .submenu li {
+    margin: 0;
+}
+
+.left .menu .submenu a {
+    font-size: 20px;
+    background-color: #e3e3e3; 
+}
+
+
+.pic:hover {
+    opacity: 0.7;
+}
+
+.pic {
+    position: relative;
+    display: inline-block;
+    padding: 1px;
+    width: 250px;
+    height: 400px;
+    background-color: rgb(228, 217, 222);
+    margin: 20px;
+    overflow: hidden;
+}
+
+.photo {
+    display: inline-block;
+    width: 100%;
+}
+
+.layer {
+    position: absolute;
+    top: 0px;
+    left: -100%;
+    text-align: center;
+    width: inherit;
+    height: inherit;
+    background-color: rgba(233, 235, 238, 0.45);
+    transition: left .3s;
+    text-decoration: none;
+}
+
+.pic:hover .layer {
+    left: 0px;
+}
+
+.con1 {
+    margin: 5px;
+    width: 250px;
+    min-height: 4000px;
+    float: left;
+    background-color: antiquewhite;
+}
+
+.con2 {
+    float: right;
+    width: 200px;
+    min-height: 4000px;
+    margin: 5px;
+    background-color: antiquewhite;
+    text-align: right;
+    padding: 10px;
+}
+
+.con3 {
+    background-color: antiquewhite;
+    overflow: hidden;
+    height: auto;
+}
+
+.right {
+    font-size: 20px;
+    font-weight: bold;
+}
